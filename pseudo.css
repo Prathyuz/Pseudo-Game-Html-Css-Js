@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 5px solid aqua;
+  box-shadow: rgb(3, 248, 228) 0px 22px 70px 4px;
+}
+
+input {
+  width: 70px;
+  height: 70px;
+  font-size: 24px;
+  font-weight: bolder;
+  text-align: center;
+  border: 1px solid black;
+}
+
+input:hover {
+  background-color: aqua;
+}
+
+input:disabled {
+  background-color: aqua;
+}
+
+.restart {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: black;
+  color: aqua;
+  font-weight: bolder;
+}
+.restart:hover {
+  box-shadow: rgb(3, 248, 228) 0px 22px 70px 4px;
+}
+
+.overpopup {
+  
+}

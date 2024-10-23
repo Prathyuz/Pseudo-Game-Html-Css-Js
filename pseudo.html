@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4x4 Sudoku Game</title>
+    <link rel="stylesheet" href="pseudo.css" />
+    <script src="pseudo.js"></script>
+  </head>
+  <body>
+    <h1>4x4 Sudoku Game</h1>
+    <div class="board">
+      <input type="text" maxlength="1" id="cell01" onchange="box01()" />
+      <input type="text" maxlength="1" id="cell02" onchange="box02()" disabled value="4" />
+      <input type="text" maxlength="1" id="cell03" onchange="box03()" disabled value="2" />
+      <input type="text" maxlength="1" id="cell04" onchange="box04()" />
+
+      <input type="text" maxlength="1" id="cell05" onchange="box05()" disabled value="2" />
+      <input type="text" maxlength="1" id="cell06" onchange="box06()" />
+      <input type="text" maxlength="1" id="cell07" onchange="box07()" />
+      <input type="text" maxlength="1" id="cell08" onchange="box08()" />
+
+      <input type="text" maxlength="1" id="cell09" onchange="box09()" />
+      <input type="text" maxlength="1" id="cell10" onchange="box10()" disabled value="2" />
+      <input type="text" maxlength="1" id="cell11" onchange="box11()" />
+      <input type="text" maxlength="1" id="cell12" onchange="box12()" disabled value="3" />
+
+      <input type="text" maxlength="1" id="cell13" onchange="box13()" />
+      <input type="text" maxlength="1" id="cell14" onchange="box14()" />
+      <input type="text" maxlength="1" id="cell15" onchange="box15()" disabled value="1" />
+      <input type="text" maxlength="1" id="cell16" onchange="box16()" />
+    </div>
+
+    <div id="overpopup" class="overpopup" onclick="">
+      <div class="inpopup">
+        <p>CONGRATS!!</p>
+        <button>OK</button>
+      </div>
+    </div>
+
+    <button class="restart" onclick="restart()">restart</button>
+  </body>
+</html>
